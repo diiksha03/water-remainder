@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>💧 Water Reminder</title>
+  <meta charset="UTF-8" />
+  <title>🌸 Water Reminder</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>💧 time to Drink water my cookie !!!</h1>
-  <p>This app reminds you every hour to drink water!</p>
+  <div class="reminder-card">
+    <h2> Reminder</h2>
+    <p>Just like a flower, you will bloom if you take time to water yourself.</p>
+
+    <button onclick="showReminder()">Okay</button>
+
+    <!-- 💖 Love message appears here -->
+    <div id="love-message" style="display: none; font-size: 1.5rem; color: #ff4081; margin-top: 20px;">
+      💖 ILY my cookie! Stay hydrated and loved...
+    </div>
+  </div>
+
+  <!-- 🔔 Chime sound that plays on reminder -->
+<audio id="chime-sound" src="audio/squidword.mp3" preload="auto"></audio>
 
   <script src="script.js"></script>
 </body>
